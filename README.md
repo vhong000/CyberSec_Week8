@@ -41,9 +41,12 @@ The SQLi exploit that I used in the project is an injection that will make the d
 
 This will cause the server to wait for 5 seconds before reloading. 
 
+#### GIF Tutorial
+<img src='https://github.com/vhong000/CyberSec_Week8/blob/master/sqli_exploit.gif'/>
+
 ### Session Hijacking 
 the Session Hijacking exploit that I used in the project uses the provided link to change the phpsessid of the logged in browser and uses it in a browser that isn't logged into the site. First we log into Globitek from another browser. We then take the phpsessid from the browser that's logged in and change the phpsessid of the current browser through the use of the provided link.
 
 #### GIF Tutorial
-<img src='https://github.com/vhong000/CyberSec_Week8/blob/master/sqli_exploit.gif'/>
+<img src='https://github.com/vhong000/CyberSec_Week8/blob/master/session_hijacking.gif'/>
 
