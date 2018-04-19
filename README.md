@@ -34,10 +34,15 @@ The IDOR exploit that I used in the project uses the knowledge of a signed in us
 ## Blue Page
 ### SQL Injection Exploit
 The SQLi exploit that I used in the project is an injection that will make the database wait for 5 seconds. We first go to the _find a Salesperson_ page and select any person's link. In the URL we will add to it:
+
 ```
 ' AND SLEEP(5)=0--'
 ```
+
 This will cause the server to wait for 5 seconds before reloading. 
+
+### Session Hijacking 
+the Session Hijacking exploit that I used in the project uses the provided link to change the phpsessid of the logged in browser and uses it in a browser that isn't logged into the site. First we log into Globitek from another browser. We then take the phpsessid from the browser that's logged in and change the phpsessid of the current browser through the use of the provided link.
 
 #### GIF Tutorial
 <img src='https://github.com/vhong000/CyberSec_Week8/blob/master/sqli_exploit.gif'/>
